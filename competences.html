@@ -1,11 +1,114 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- fichier: competences.html -->
+<!doctype html>
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Dorian</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Compétences — Dorian LHOSTE-ESTIMBRE</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lucide-static@latest/font/lucide.css">
 </head>
+
 <body>
-    
+  <header id="hero" style="min-height:40vh;display:flex;align-items:center;justify-content:center;">
+    <div class="container hero-inner">
+      <h1 class="name" style="color:var(--accent);text-shadow:0 0 20px rgba(56,232,255,0.5);">Compétences</h1>
+      <div class="title" style="color:var(--muted2);text-shadow:0 0 8px rgba(0,0,0,0.8);">Cybersécurité • Réseaux • Systèmes • Soft Skills</div>
+    </div>
+  </header>
+
+  <section id="competences" class="container">
+
+    <!-- Cybersécurité -->
+    <div class="competence-category">
+      <h2><i class="lucide lucide-shield"></i> Cybersécurité</h2>
+      <div class="competence-grid">
+        <div class="competence-card" style="--progress: 100%;">
+          <div class="competence-title">Analyse de risques (ARM)</div>
+          <div class="progress-bar"><div class="progress-fill"></div></div>
+          <p>Rédaction et mise en œuvre d’analyses de risques métiers au Crédit Agricole. Élaboration d’une méthode de rédaction adoptée par l’équipe CISO.</p>
+        </div>
+
+        <div class="competence-card" style="--progress: 100%;">
+          <div class="competence-title">Sensibilisation à la cybersécurité</div>
+          <div class="progress-bar"><div class="progress-fill"></div></div>
+          <p>Création de supports pédagogiques adaptés à tous niveaux, vulgarisation et communication claire sur les bonnes pratiques.</p>
+        </div>
+
+        <div class="competence-card" style="--progress: 100%;">
+          <div class="competence-title">Conformité et gouvernance</div>
+          <div class="progress-bar"><div class="progress-fill"></div></div>
+          <p>Mise en conformité réglementaire, participation à l’élaboration de politiques internes et procédures de sécurité.</p>
+        </div>
+
+        <div class="competence-card" style="--progress: 100%;">
+          <div class="competence-title">Sécurité réseau & Pentesting</div>
+          <div class="progress-bar"><div class="progress-fill"></div></div>
+          <p>Analyse des configurations réseau, détection de vulnérabilités, mise en place d’outils de monitoring et tests de sécurité basiques.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Réseaux et systèmes -->
+    <div class="competence-category">
+      <h2><i class="lucide lucide-network"></i> Réseaux & Systèmes</h2>
+      <div class="competence-grid">
+        <div class="competence-card" style="--progress: 100%;">
+          <div class="competence-title">Administration réseau</div>
+          <div class="progress-bar"><div class="progress-fill"></div></div>
+          <p>Configuration de switchs, résolution d’incidents IP, mise en place de firewalls, VLANs et solutions d’accès distant (Guacamole).</p>
+        </div>
+
+        <div class="competence-card" style="--progress: 100%;">
+          <div class="competence-title">Virtualisation</div>
+          <div class="progress-bar"><div class="progress-fill"></div></div>
+          <p>Expérience avec VMware, Hyper-V et VirtualBox pour la création d’environnements isolés et serveurs virtualisés.</p>
+        </div>
+
+        <div class="competence-card" style="--progress: 100%;">
+          <div class="competence-title">Environnements Windows & Active Directory</div>
+          <div class="progress-bar"><div class="progress-fill"></div></div>
+          <p>Gestion des utilisateurs, droits et rôles, intégration réseau et sécurité d’accès.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Soft Skills -->
+    <div class="competence-category">
+      <h2><i class="lucide lucide-brain"></i> Soft Skills</h2>
+      <div class="competence-grid">
+        <div class="competence-card" style="--progress: 100%;">
+          <div class="competence-title">Rigueur & Méthodologie</div>
+          <div class="progress-bar"><div class="progress-fill"></div></div>
+          <p>Approche structurée des projets et documentation claire, adoptée par les équipes techniques et CISO.</p>
+        </div>
+
+        <div class="competence-card" style="--progress: 100%;">
+          <div class="competence-title">Pédagogie & Vulgarisation</div>
+          <div class="progress-bar"><div class="progress-fill"></div></div>
+          <p>Capacité à adapter le discours technique à tout public, notamment lors des campagnes de sensibilisation.</p>
+        </div>
+
+        <div class="competence-card" style="--progress: 100%;">
+          <div class="competence-title">Travail en équipe</div>
+          <div class="progress-bar"><div class="progress-fill"></div></div>
+          <p>Collaboration efficace entre techniciens, référents sécurité et management pour atteindre les objectifs communs.</p>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align:center;">
+      <a class="btn cta-btn" href="index.html">← Retour au profil</a>
+    </div>
+
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 LHOSTE-ESTIMBRE Dorian — Ingénieur Cybersécurité</p>
+    <p><a href="https://linkedin.com/in/dorian-lhoste" target="_blank">LinkedIn</a> | <a href="https://github.com/dodo-real" target="_blank">GitHub</a></p>
+  </footer>
+
+  <script src="script_competences.js"></script>
 </body>
 </html>

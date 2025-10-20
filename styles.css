@@ -17,6 +17,14 @@ html, body {
   padding: 0;
   height: 100%; 
   color: #e6eef6;
+  background-image: url('assets/contexte-techno-abstrait-avec-des-points-de-connexion.jpg');
+ background-size: cover;        /* L'image couvre toute la page */
+  background-position: center;   /* Centrée */
+  background-repeat: no-repeat;  /* Pas de répétition */
+  background-attachment: fixed;  /* Reste fixe même en scrollant */
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
 }
 
 a { text-decoration: none; color: inherit; }

@@ -94,7 +94,6 @@ a {
     font-weight: 700;
     margin-bottom: 12px;
     color: var(--accent);
-    display: flex;
     align-items: center;
     gap: 10px;
     text-shadow: 0 0 8px rgba(6, 182, 212, 0.4);

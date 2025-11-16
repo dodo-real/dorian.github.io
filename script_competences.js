@@ -1,34 +1,27 @@
-/* fichier: script.js (refait intégralement) */
-
-// Typing animation avec effet reverse
-const typingElement = document.querySelector('.typing');
-const text = typingElement.dataset.text;
-let index = 0;
-let forward = true;
-
-function typeStatus() {
-  if (forward) {
-    typingElement.textContent = text.slice(0, index);
-    index++;
-    if (index > text.length) {
-      forward = false;
-      setTimeout(typeStatus, 150);
-      return;
+// Animation au scroll des cartes
+const cards = document.querySelectorAll('.competence-card');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
     }
-  } else {
-    index--;
-    if (index > 0) {
-      typingElement.textContent = text.slice(0, index);
-    } else {
-      typingElement.textContent = "";
-      forward = true;
-      setTimeout(typeStatus, 400);
-      return;
+  });
+}, { threshold: 0.2 });
+cards.forEach(card => observer.observe(card));
+
+// Animation des titres
+const titles = document.querySelectorAll('.competence-category h2');
+const titleObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('animate');
+      titleObserver.unobserve(entry.target);
     }
-  }
-  setTimeout(typeStatus, 100);
-}
-typeStatus();
+  });
+}, { threshold: 0.5 });
+titles.forEach(t => titleObserver.observe(t));
+
 
 //Fonction pour la navbar (évite qu'elle recouvre le footer)
 (function() {
